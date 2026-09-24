@@ -67,15 +67,15 @@ Login-Security-Monitoring-System/
 
 ### 🔐 User Login Page
 
-![User Login Page](readme_assets/login-page.png)
+![User Login Page](assets/login-page.png)
 
 ### 📋 Login Security Logs
 
-![Login Security Logs](readme_assets/login-security-logs.png)
+![Login Security Logs](assets/login-security-logs.png)
 
 ### 📊 System Dashboard
 
-![System Dashboard](readme_assets/dashboard.png)
+![System Dashboard](assets/dashboard.png)
 
 ## 🛠️ Step-by-Step Setup Guide
 
