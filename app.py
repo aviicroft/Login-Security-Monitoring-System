@@ -12,26 +12,31 @@ Database: MySQL (XAMPP / mysql-connector-python)
 ===============================================================
 """
 
+import os
+from dotenv import load_dotenv
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 import mysql.connector
 from mysql.connector import Error
 from functools import wraps
 
+# Load environment variables from .env file
+load_dotenv()
+
 app = Flask(__name__)
 
 # Secret key for managing user sessions securely
-app.secret_key = 'super_secret_college_project_key_change_in_production'
+app.secret_key = os.getenv('SECRET_KEY', 'super_secret_college_project_key_change_in_production')
 
 # -------------------------------------------------------------------
-# Database Configuration (Default XAMPP MySQL Settings)
+# Database Configuration (Loaded from Environment Variables)
 # -------------------------------------------------------------------
 DB_CONFIG = {
-    'host': 'sql.freedb.tech',
-    'user': 'u_WUQumm',
-    'password': '4ERLckcLN1YO',          # Default XAMPP MySQL has an empty password
-    'database': 'freedb_uoGfExXX',
-    'port': 3306
+    'host': os.getenv('DB_HOST', 'localhost'),
+    'user': os.getenv('DB_USER', 'root'),
+    'password': os.getenv('DB_PASSWORD', ''),
+    'database': os.getenv('DB_NAME', 'login_security_db'),
+    'port': int(os.getenv('DB_PORT', 3306))
 }
 
 def get_db_connection():
