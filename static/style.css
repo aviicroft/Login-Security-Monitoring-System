@@ -1,0 +1,160 @@
+/* =========================================================
+   Login Security Monitoring System - Custom Stylesheet
+   ========================================================= */
+
+:root {
+    --primary-color: #0d6efd;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --dark-bg: #1e293b;
+    --card-bg: #ffffff;
+    --body-bg: #f8fafc;
+    --text-color: #334155;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar-custom {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Auth Cards (Login & Register) */
+.auth-container {
+    max-width: 420px;
+    margin: 60px auto;
+}
+
+.auth-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+}
+
+.auth-card .card-header {
+    background: transparent;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 24px 20px 10px;
+}
+
+/* Dashboard Stat Cards */
+.stat-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card.card-users {
+    border-left: 5px solid #0d6efd;
+}
+
+.stat-card.card-success {
+    border-left: 5px solid #198754;
+}
+
+.stat-card.card-failed {
+    border-left: 5px solid #dc3545;
+}
+
+.stat-card.card-events {
+    border-left: 5px solid #fd7e14;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+/* Custom Table Styles */
+.custom-table {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.custom-table thead {
+    background-color: #f1f5f9;
+}
+
+.custom-table th {
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Status Badges */
+.badge-status-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.badge-status-failed {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+/* Severity Badges */
+.badge-severity-low {
+    background-color: #cff4fc;
+    color: #055160;
+    font-weight: 600;
+}
+
+.badge-severity-medium {
+    background-color: #fff3cd;
+    color: #664d03;
+    font-weight: 600;
+}
+
+.badge-severity-high {
+    background-color: #ffe5d0;
+    color: #984c0c;
+    font-weight: 600;
+}
+
+.badge-severity-critical {
+    background-color: #f8d7da;
+    color: #842029;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 0.9rem;
+}
