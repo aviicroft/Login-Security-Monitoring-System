@@ -2,6 +2,12 @@
 
 A simple, beginner-friendly **College-Level Cybersecurity Web Application** built with **Python Flask** and **MySQL (XAMPP)** to demonstrate secure user authentication, login anomaly monitoring (successful vs. failed attempts), and CRUD operations for cybersecurity incident events.
 
+## 🌐 Live Demo
+
+Try the deployed application here:
+
+**[Login Security Monitoring System](https://login-security-monitoring-system.vercel.app/)**
+
 ---
 
 ## 📌 Features
@@ -56,6 +62,20 @@ Login-Security-Monitoring-System/
 ```
 
 ---
+
+## 📸 Application Screenshots
+
+### 🔐 User Login Page
+
+![User Login Page](readme_assets/login-page.png)
+
+### 📋 Login Security Logs
+
+![Login Security Logs](readme_assets/login-security-logs.png)
+
+### 📊 System Dashboard
+
+![System Dashboard](readme_assets/dashboard.png)
 
 ## 🛠️ Step-by-Step Setup Guide
 
